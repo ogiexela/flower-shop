@@ -56,7 +56,9 @@ jobs:
 
       - run:
           name: Upload coverage to CC
-          command: ./cc-test-reporter after-build --coverage-input-type clover ./coverage/clover.xml
+          command: |
+            cp ./coverage ./
+            ./cc-test-reporter after-build --debug --coverage-input-type clover
           working_directory: flower-shop-app
 
       - store_test_results:
