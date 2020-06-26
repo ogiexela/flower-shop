@@ -51,6 +51,7 @@ jobs:
           command: |
             curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
             chmod +x ./cc-test-reporter
+          working_directory: flower-shop-app
 
       - run:
           command: yarn test
@@ -59,8 +60,9 @@ jobs:
       - run:
           name: Upload coverage to CC
           command: |
-            cp ./coverage/clover.xml ./clover.xml
+            cp ./clover.xml ./clover.xml
             ./cc-test-reporter after-build --coverage-input-type clover
+          working_directory: flower-shop-app
 
       - store_test_results:
           path: flower-shop-app/test-results
