@@ -15,6 +15,9 @@ async function bootstrap() {
     .setTitle('Flower Shop API')
     .setDescription('Rest API for Flower Shop')
     .setVersion('1.0')
+    .addServer('/api')
+    .addServer('/')
+    .addServer('http://localhost:3000')
     .build();
 
   const document = SwaggerModule.createDocument(app, options);
