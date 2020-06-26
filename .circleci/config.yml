@@ -83,24 +83,24 @@ jobs:
           working_directory: flower-shop-api
 
       - run:
-          command: cp ./package.json ./dist/package.json
+          command: cp ./package.json ./api/package.json
           working_directory: flower-shop-api
       - run:
-          command: cp ./yarn.lock ./dist/yarn.lock
+          command: cp ./yarn.lock ./api/yarn.lock
           working_directory: flower-shop-api
 
       - restore_cache:
             name: Restore Yarn Package Cache
             keys:
-                - yarn-packages-{{ checksum "./flower-shop-api/dist/yarn.lock" }}
+                - yarn-packages-{{ checksum "./flower-shop-api/api/yarn.lock" }}
       - run:
             name: Install Prod Dependencies
             command: yarn --prod -silent --frozen-lockfile
-            working_directory: flower-shop-api/dist
+            working_directory: flower-shop-api/api
 
       - save_cache:
             name: Save Yarn Package Cache
-            key: yarn-packages-{{ checksum "./flower-shop-api/dist/yarn.lock" }}
+            key: yarn-packages-{{ checksum "./flower-shop-api/api/yarn.lock" }}
             paths:
                 - ~/.cache/yarn
 
