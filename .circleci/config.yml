@@ -21,7 +21,7 @@ jobs:
       - checkout
 
       - run:
-            command: apk add docker
+            command: apk add docker curl
 
       - run:
           command: ls
