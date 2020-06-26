@@ -2,7 +2,7 @@ version: 2.1
 jobs:
   build:
     docker:
-      - image: node:12.13.0-alpine
+      - image: circleci/node:12.13.0
 
     working_directory: ~/repo
 
@@ -14,6 +14,9 @@ jobs:
 
       - run:
           command: ls
+
+      - run:
+          command: git --version
 
       - run:
           name: DOCKER version
