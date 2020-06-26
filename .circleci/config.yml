@@ -10,7 +10,7 @@ jobs:
       - checkout
 
       - run:
-            command: apt-get install docker curl
+            command: sudo apt-get install docker curl
 
       - run:
           command: ls
