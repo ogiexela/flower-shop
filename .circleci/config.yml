@@ -10,13 +10,16 @@ jobs:
       - checkout
 
       - run:
-            command: apk add docker curl
+            command: apt-get install docker curl
 
       - run:
           command: ls
 
       - run:
-          command: git --version
+          command: |
+            git --version
+            docker --version
+            curl --version
 
       - run:
           name: DOCKER version
