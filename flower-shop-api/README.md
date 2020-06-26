@@ -20,10 +20,9 @@ $ yarn start:prod
 
 ## Documentation
 
-http://localhost:3000/swagger-ui
-
-https://flowershoptest.herokuapp.com/api/swagger-ui/
-https://flowershoptest.herokuapp.com/api/documentation/
+http://localhost:3000/swagger-ui  
+https://flowershoptest.herokuapp.com/api/swagger-ui/  
+https://flowershoptest.herokuapp.com/api/documentation/  
 
 
 ## Test
