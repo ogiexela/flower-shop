@@ -1,0 +1,516 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FlowerComponent able to add to cart: flower_added_to_cart 1`] = `
+<div
+  id="root4"
+>
+  <app-flower>
+    
+    <div
+      class="flower-card"
+      id="flower_card_foo_id1"
+    >
+      <div
+        class="flower-image"
+      >
+        <img
+          class="half-opacity"
+          src="./assets/flowers/flower4.jpg"
+        />
+        
+        
+        <button
+          id="remove_flower_from_cart"
+        >
+          Remove from cart
+        </button>
+      </div>
+      <span
+        class="flower-name"
+      >
+        Test Flower4
+      </span>
+      <span
+        class="flower-price"
+      >
+        $5.99
+      </span>
+      <div
+        class="flower-rating"
+      >
+        
+        <span>
+          ★
+        </span>
+        <span>
+          ★
+        </span>
+        <span>
+          ★
+        </span>
+        <span>
+          ★
+        </span>
+        <span>
+          ☆
+        </span>
+      </div>
+      
+      <div
+        class="in-cart"
+      >
+        <span>
+          In Cart
+        </span>
+      </div>
+    </div>
+    
+  </app-flower>
+</div>
+`;
+
+exports[`FlowerComponent able to remove from cart: flower_added_to_cart_false 1`] = `
+<div
+  id="root5"
+>
+  <app-flower>
+    
+    <div
+      class="flower-card"
+      id="flower_card_foo_id2"
+    >
+      <div
+        class="flower-image"
+      >
+        <img
+          class=""
+          src="./assets/flowers/flower5.jpg"
+        />
+        
+        
+      </div>
+      <span
+        class="flower-name"
+      >
+        Test Flower5
+      </span>
+      <span
+        class="flower-price"
+      >
+        $6.99
+      </span>
+      <div
+        class="flower-rating"
+      >
+        
+        <span>
+          ★
+        </span>
+        <span>
+          ★
+        </span>
+        <span>
+          ★
+        </span>
+        <span>
+          ★
+        </span>
+        <span>
+          ★
+        </span>
+      </div>
+      
+    </div>
+    
+  </app-flower>
+</div>
+`;
+
+exports[`FlowerComponent display add to cart on mouse enter: flower_add_to_cart 1`] = `
+<div
+  id="root2"
+>
+  <app-flower>
+    
+    <div
+      class="flower-card"
+      id="flower_card_fooid"
+    >
+      <div
+        class="flower-image"
+      >
+        <img
+          class="half-opacity"
+          src="./assets/flowers/flower2.jpg"
+        />
+        
+        <button
+          id="add_flower_to_cart"
+        >
+          Add to cart
+        </button>
+        
+      </div>
+      <span
+        class="flower-name"
+      >
+        Test Flower2
+      </span>
+      <span
+        class="flower-price"
+      >
+        $4.99
+      </span>
+      <div
+        class="flower-rating"
+      >
+        
+        <span>
+          ★
+        </span>
+        <span>
+          ★
+        </span>
+        <span>
+          ★
+        </span>
+        <span>
+          ☆
+        </span>
+        <span>
+          ☆
+        </span>
+      </div>
+      
+    </div>
+    
+  </app-flower>
+</div>
+`;
+
+exports[`FlowerComponent do not display add to cart on mouse leave: flower_add_to_cart_off 1`] = `
+<div
+  id="root3"
+>
+  <app-flower>
+    
+    <div
+      class="flower-card"
+      id="flower_card_fooid"
+    >
+      <div
+        class="flower-image"
+      >
+        <img
+          class=""
+          src="./assets/flowers/flower3.jpg"
+        />
+        
+        
+      </div>
+      <span
+        class="flower-name"
+      >
+        Test Flower3
+      </span>
+      <span
+        class="flower-price"
+      >
+        $5.99
+      </span>
+      <div
+        class="flower-rating"
+      >
+        
+        <span>
+          ★
+        </span>
+        <span>
+          ☆
+        </span>
+        <span>
+          ☆
+        </span>
+        <span>
+          ☆
+        </span>
+        <span>
+          ☆
+        </span>
+      </div>
+      
+    </div>
+    
+  </app-flower>
+</div>
+`;
+
+exports[`FlowerComponent do not display add to cart on mouse leave: flower_add_to_cart_on 1`] = `
+<div
+  id="root3"
+>
+  <app-flower>
+    
+    <div
+      class="flower-card"
+      id="flower_card_fooid"
+    >
+      <div
+        class="flower-image"
+      >
+        <img
+          class="half-opacity"
+          src="./assets/flowers/flower3.jpg"
+        />
+        
+        <button
+          id="add_flower_to_cart"
+        >
+          Add to cart
+        </button>
+        
+      </div>
+      <span
+        class="flower-name"
+      >
+        Test Flower3
+      </span>
+      <span
+        class="flower-price"
+      >
+        $5.99
+      </span>
+      <div
+        class="flower-rating"
+      >
+        
+        <span>
+          ★
+        </span>
+        <span>
+          ☆
+        </span>
+        <span>
+          ☆
+        </span>
+        <span>
+          ☆
+        </span>
+        <span>
+          ☆
+        </span>
+      </div>
+      
+    </div>
+    
+  </app-flower>
+</div>
+`;
+
+exports[`FlowerComponent flower already in cart: flower_already_in_cart 1`] = `
+<div
+  id="root6"
+>
+  <app-flower>
+    
+    <div
+      class="flower-card"
+      id="flower_card_fooid"
+    >
+      <div
+        class="flower-image"
+      >
+        <img
+          class="half-opacity"
+          src="./assets/flowers/flower7.jpg"
+        />
+        
+        
+        <button
+          id="remove_flower_from_cart"
+        >
+          Remove from cart
+        </button>
+      </div>
+      <span
+        class="flower-name"
+      >
+        Test Flower7
+      </span>
+      <span
+        class="flower-price"
+      >
+        $7.99
+      </span>
+      <div
+        class="flower-rating"
+      >
+        
+        <span>
+          ★
+        </span>
+        <span>
+          ★
+        </span>
+        <span>
+          ★
+        </span>
+        <span>
+          ☆
+        </span>
+        <span>
+          ☆
+        </span>
+      </div>
+      
+      <div
+        class="in-cart"
+      >
+        <span>
+          In Cart
+        </span>
+      </div>
+    </div>
+    
+  </app-flower>
+</div>
+`;
+
+exports[`FlowerComponent flower already in cart: flower_already_in_cart 2`] = `
+<div
+  id="root6"
+>
+  <app-flower>
+    
+    <div
+      class="flower-card"
+      id="flower_card_fooid"
+    >
+      <div
+        class="flower-image"
+      >
+        <img
+          class="half-opacity"
+          src="./assets/flowers/flower7.jpg"
+        />
+        
+        
+        <button
+          id="remove_flower_from_cart"
+        >
+          Remove from cart
+        </button>
+      </div>
+      <span
+        class="flower-name"
+      >
+        Test Flower7
+      </span>
+      <span
+        class="flower-price"
+      >
+        $7.99
+      </span>
+      <div
+        class="flower-rating"
+      >
+        
+        <span>
+          ★
+        </span>
+        <span>
+          ★
+        </span>
+        <span>
+          ★
+        </span>
+        <span>
+          ☆
+        </span>
+        <span>
+          ☆
+        </span>
+      </div>
+      
+      <div
+        class="in-cart"
+      >
+        <span>
+          In Cart
+        </span>
+      </div>
+    </div>
+    
+  </app-flower>
+</div>
+`;
+
+exports[`FlowerComponent state with a flower: flower_state 1`] = `
+<div
+  id="root1"
+>
+  <app-flower>
+    
+    <div
+      class="flower-card"
+      id="flower_card_fooid"
+    >
+      <div
+        class="flower-image"
+      >
+        <img
+          src="./assets/flowers/flower1.jpg"
+        />
+        
+        
+      </div>
+      <span
+        class="flower-name"
+      >
+        Test Flower1
+      </span>
+      <span
+        class="flower-price"
+      >
+        $4.99
+      </span>
+      <div
+        class="flower-rating"
+      >
+        
+        <span>
+          ★
+        </span>
+        <span>
+          ★
+        </span>
+        <span>
+          ☆
+        </span>
+        <span>
+          ☆
+        </span>
+        <span>
+          ☆
+        </span>
+      </div>
+      
+    </div>
+    
+  </app-flower>
+</div>
+`;
+
+exports[`FlowerComponent state without a flower: empty_state 1`] = `
+<div
+  id="root0"
+>
+  <app-flower>
+    
+    
+    <div>
+      404 Flower not found.
+    </div>
+  </app-flower>
+</div>
+`;

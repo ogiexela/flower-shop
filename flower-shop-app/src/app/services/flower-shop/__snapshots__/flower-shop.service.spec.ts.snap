@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FlowerShopService should call createFlower api: create flower api call body 1`] = `
+Object {
+  "name": "original flower name",
+}
+`;
+
+exports[`FlowerShopService should call createFlower api: create flower api response 1`] = `
+Object {
+  "name": "created flower name",
+}
+`;
+
+exports[`FlowerShopService should call getFlowers api with default args: get flower api call params 1`] = `
+HttpParams {
+  "cloneFrom": null,
+  "encoder": HttpUrlEncodingCodec {},
+  "map": null,
+  "updates": null,
+}
+`;
+
+exports[`FlowerShopService should call getFlowers api with default args: get flowers api response 1`] = `
+Object {
+  "count": 1,
+  "data": Array [
+    Object {
+      "name": "dummy flower",
+    },
+  ],
+  "page": 1,
+  "pageCount": 1,
+  "total": 1,
+}
+`;

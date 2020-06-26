@@ -1,0 +1,66 @@
+<article>
+    <div *ngIf="flowers?.length" class="buy-page-header">
+        <div class="cart">
+            <label>Cart:</label>
+            <select
+                name="cars"
+                id="cars"
+            >
+                <option *ngIf="!cart?.length">empty</option>
+                <option
+                    *ngFor="let item of cart"
+                    [value]="item"
+                >{{getFlowerName(item)}}</option>
+            </select>
+        </div>
+        <div class="items-per-page">
+            <label for="itemsPerPage">Items per page: </label>
+            <select
+                class="form-control"
+                id="itemsPerPage"
+                required
+                [(ngModel)]="itemsPerPage"
+                (ngModelChange)="changeItemsPerPage($event)"
+                name="itemsPerPage"
+                #power="ngModel"
+            >
+                <option value="1">1</option>
+                <option value="5">5</option>
+                <option value="10">10</option>
+                <option value="20">20</option>
+            </select>
+        </div>
+    </div>
+    <div class="flower-list">
+        <app-flower
+            (addToCart)="addToCart($event)"
+            (removeFromCart)="removeFromCart($event)"
+            *ngFor="let flower of flowers;"
+            [flower]="flower"
+            [inCart]="isInCart(flower.id)"
+        ></app-flower>
+    </div>
+    <div
+        *ngIf="flowers?.length"
+        class="flower-list-controls"
+    >
+        <button
+            (click)="previousPage()"
+            [disabled]="!shouldShowPreviousPageButton"
+            id="previous_page"
+        >PREVIOUS</button>
+        <span class="page-counter">{{currentPage}} of {{flowersResponse.pageCount}}</span>
+        <button
+            (click)="nextPage()"
+            [disabled]="!shouldShowNextPageButton"
+            id="next_page"
+        >NEXT</button>
+    </div>
+    <div
+        class="empty-list"
+        *ngIf="!flowers?.length"
+    >
+        <p>No flowers in stock.</p>
+        <a routerLink="/flowers/sell">Try selling some...</a>
+    </div>
+</article>

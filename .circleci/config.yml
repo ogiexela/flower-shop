@@ -1,0 +1,135 @@
+# Javascript Node CircleCI 2.0 configuration file
+#
+# Check https://circleci.com/docs/2.0/language-javascript/ for more details
+#
+version: 2
+jobs:
+  build:
+    branches:
+      only:
+        - master
+
+    docker:
+      - image: node:12.13.0-alpine
+
+    working_directory: ~/repo
+
+    steps:
+      - checkout
+
+      - run:
+            command: apk add docker
+
+      - run:
+          command: ls
+
+      - run:
+          name: DOCKER version
+          command: docker --version
+
+      # BUILD APP
+      - restore_cache:
+          name: Restore Yarn Package Cache
+          keys:
+            - yarn-packages-{{ checksum "./flower-shop-app/yarn.lock" }}
+      - run:
+          name: Install Dependencies
+          command: yarn -silent install --frozen-lockfile
+          working_directory: flower-shop-app
+
+      - save_cache:
+          name: Save Yarn Package Cache
+          key: yarn-packages-{{ checksum "./flower-shop-app/yarn.lock" }}
+          paths:
+            - ~/.cache/yarn
+
+      - run:
+          command: yarn test
+          working_directory: flower-shop-app
+
+      - run:
+          command: yarn build
+          working_directory: flower-shop-app
+
+      - run:
+          command: rm -rf ./src
+          working_directory: flower-shop-app
+
+      - run:
+          command: rm -rf ./node-modules
+          working_directory: flower-shop-app
+
+      # BUILD API
+      - restore_cache:
+          name: Restore Yarn Package Cache
+          keys:
+            - yarn-packages-{{ checksum "./flower-shop-api/yarn.lock" }}
+      - run:
+          name: Install Dependencies
+          command: yarn -silent install --frozen-lockfile
+          working_directory: flower-shop-api
+
+      - save_cache:
+          name: Save Yarn Package Cache
+          key: yarn-packages-{{ checksum "./flower-shop-api/yarn.lock" }}
+          paths:
+            - ~/.cache/yarn
+
+      - run:
+          command: yarn build
+          working_directory: flower-shop-api
+
+      - run:
+          command: cp ./package.json ./dist/package.json
+          working_directory: flower-shop-api
+      - run:
+          command: cp ./yarn.lock ./dist/yarn.lock
+          working_directory: flower-shop-api
+
+      - restore_cache:
+            name: Restore Yarn Package Cache
+            keys:
+                - yarn-packages-{{ checksum "./flower-shop-api/dist/yarn.lock" }}
+      - run:
+            name: Install Prod Dependencies
+            command: yarn --prod -silent --frozen-lockfile
+            working_directory: flower-shop-api/dist
+
+      - save_cache:
+            name: Save Yarn Package Cache
+            key: yarn-packages-{{ checksum "./flower-shop-api/dist/yarn.lock" }}
+            paths:
+                - ~/.cache/yarn
+
+      - run:
+          command: rm -rf ./src
+          working_directory: flower-shop-api
+
+      - run:
+          command: rm -rf ./node-modules
+          working_directory: flower-shop-api
+
+      - run:
+          command: chmod +x ./start-servers.sh
+
+      - setup_remote_docker
+
+      #BUILD DOCKER IMAGE
+      - run:
+          name: BUILD DOCKER IMAGE
+          command: docker build -t axelgo/flower-shop:$CIRCLE_BRANCH-$CIRCLE_BUILD_NUM .
+
+      - run:
+          name: PUBLISH DOCKER IMAGE TO DOCKER HUB
+          command: |
+            docker login -u $DOCKERHUB_LOGIN -p $DOCKERHUB_PASSWORD
+            docker push axelgo/flower-shop:$CIRCLE_BRANCH-$CIRCLE_BUILD_NUM
+
+      #DEPLOY TO HEROKU
+      - run:
+          name: DEPLOY TO HEROKU
+          command: |
+            docker login -u $HEROKU_EMAIL -p $HEROKU_AUTH_TOKEN registry.heroku.com
+            docker tag axelgo/flower-shop:$CIRCLE_BRANCH-$CIRCLE_BUILD_NUM registry.heroku.com/flowershoptest/web
+            docker push registry.heroku.com/flowershoptest/web
+            docker run --rm -e HEROKU_API_KEY=$HEROKU_API_KEY wingrunr21/alpine-heroku-cli container:release web --app flowershoptest

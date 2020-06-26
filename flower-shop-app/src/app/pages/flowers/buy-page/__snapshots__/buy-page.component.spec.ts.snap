@@ -1,0 +1,1165 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BuyPageComponent add flower to cart: flower_in_cart_state 1`] = `
+<div
+  id="root2"
+>
+  <article>
+    
+    <div
+      class="buy-page-header"
+    >
+      <div
+        class="cart"
+      >
+        <label>
+          Cart:
+        </label>
+        <select
+          id="cars"
+          name="cars"
+        >
+          
+          
+          <option
+            value="foooid"
+          >
+            test flower1
+          </option>
+        </select>
+      </div>
+      <div
+        class="items-per-page"
+      >
+        <label
+          for="itemsPerPage"
+        >
+          Items per page: 
+        </label>
+        <select
+          class="form-control ng-untouched ng-pristine ng-valid"
+          id="itemsPerPage"
+          name="itemsPerPage"
+          required=""
+        >
+          <option
+            value="1"
+          >
+            1
+          </option>
+          <option
+            value="5"
+          >
+            5
+          </option>
+          <option
+            value="10"
+          >
+            10
+          </option>
+          <option
+            value="20"
+          >
+            20
+          </option>
+        </select>
+      </div>
+    </div>
+    <div
+      class="flower-list"
+    >
+      
+      <app-flower>
+        
+        <div
+          class="flower-card"
+          id="flower_card_foooid"
+        >
+          <div
+            class="flower-image"
+          >
+            <img
+              class="half-opacity"
+              src="./assets/flowers/foo.jpg"
+            />
+            
+            
+            <button
+              id="remove_flower_from_cart"
+            >
+              Remove from cart
+            </button>
+          </div>
+          <span
+            class="flower-name"
+          >
+            test flower1
+          </span>
+          <span
+            class="flower-price"
+          >
+            $1.98
+          </span>
+          <div
+            class="flower-rating"
+          >
+            
+            <span>
+              ★
+            </span>
+            <span>
+              ★
+            </span>
+            <span>
+              ☆
+            </span>
+            <span>
+              ☆
+            </span>
+            <span>
+              ☆
+            </span>
+          </div>
+          
+          <div
+            class="in-cart"
+          >
+            <span>
+              In Cart
+            </span>
+          </div>
+        </div>
+        
+      </app-flower>
+    </div>
+    
+    <div
+      class="flower-list-controls"
+    >
+      <button
+        disabled=""
+        id="previous_page"
+      >
+        PREVIOUS
+      </button>
+      <span
+        class="page-counter"
+      >
+        1 of 0
+      </span>
+      <button
+        disabled=""
+        id="next_page"
+      >
+        NEXT
+      </button>
+    </div>
+    
+  </article>
+</div>
+`;
+
+exports[`BuyPageComponent empty state: empty_state 1`] = `
+<div
+  id="root0"
+>
+  <article>
+    
+    <div
+      class="flower-list"
+    >
+      
+    </div>
+    
+    
+    <div
+      class="empty-list"
+    >
+      <p>
+        No flowers in stock.
+      </p>
+      <a
+        href="/flowers/sell"
+        routerlink="/flowers/sell"
+      >
+        Try selling some...
+      </a>
+    </div>
+  </article>
+</div>
+`;
+
+exports[`BuyPageComponent next and previous pages of flowers: first_page 1`] = `
+<div
+  id="root4"
+>
+  <article>
+    
+    <div
+      class="buy-page-header"
+    >
+      <div
+        class="cart"
+      >
+        <label>
+          Cart:
+        </label>
+        <select
+          id="cars"
+          name="cars"
+        >
+          
+          <option>
+            empty
+          </option>
+          
+        </select>
+      </div>
+      <div
+        class="items-per-page"
+      >
+        <label
+          for="itemsPerPage"
+        >
+          Items per page: 
+        </label>
+        <select
+          class="form-control ng-untouched ng-pristine ng-invalid"
+          id="itemsPerPage"
+          name="itemsPerPage"
+          required=""
+        >
+          <option
+            value="1"
+          >
+            1
+          </option>
+          <option
+            value="5"
+          >
+            5
+          </option>
+          <option
+            value="10"
+          >
+            10
+          </option>
+          <option
+            value="20"
+          >
+            20
+          </option>
+        </select>
+      </div>
+    </div>
+    <div
+      class="flower-list"
+    >
+      
+      <app-flower>
+        
+        <div
+          class="flower-card"
+          id="flower_card_foooid1"
+        >
+          <div
+            class="flower-image"
+          >
+            <img
+              src="./assets/flowers/foo1.jpg"
+            />
+            
+            
+          </div>
+          <span
+            class="flower-name"
+          >
+            test flower1
+          </span>
+          <span
+            class="flower-price"
+          >
+            $1.98
+          </span>
+          <div
+            class="flower-rating"
+          >
+            
+            <span>
+              ★
+            </span>
+            <span>
+              ★
+            </span>
+            <span>
+              ☆
+            </span>
+            <span>
+              ☆
+            </span>
+            <span>
+              ☆
+            </span>
+          </div>
+          
+        </div>
+        
+      </app-flower>
+      <app-flower>
+        
+        <div
+          class="flower-card"
+          id="flower_card_foooid2"
+        >
+          <div
+            class="flower-image"
+          >
+            <img
+              src="./assets/flowers/foo2.jpg"
+            />
+            
+            
+          </div>
+          <span
+            class="flower-name"
+          >
+            test flower2
+          </span>
+          <span
+            class="flower-price"
+          >
+            $2.22
+          </span>
+          <div
+            class="flower-rating"
+          >
+            
+            <span>
+              ★
+            </span>
+            <span>
+              ★
+            </span>
+            <span>
+              ★
+            </span>
+            <span>
+              ★
+            </span>
+            <span>
+              ☆
+            </span>
+          </div>
+          
+        </div>
+        
+      </app-flower>
+    </div>
+    
+    <div
+      class="flower-list-controls"
+    >
+      <button
+        disabled=""
+        id="previous_page"
+      >
+        PREVIOUS
+      </button>
+      <span
+        class="page-counter"
+      >
+        1 of 2
+      </span>
+      <button
+        id="next_page"
+      >
+        NEXT
+      </button>
+    </div>
+    
+  </article>
+</div>
+`;
+
+exports[`BuyPageComponent next and previous pages of flowers: next_page 1`] = `
+<div
+  id="root4"
+>
+  <article>
+    
+    <div
+      class="buy-page-header"
+    >
+      <div
+        class="cart"
+      >
+        <label>
+          Cart:
+        </label>
+        <select
+          id="cars"
+          name="cars"
+        >
+          
+          <option>
+            empty
+          </option>
+          
+        </select>
+      </div>
+      <div
+        class="items-per-page"
+      >
+        <label
+          for="itemsPerPage"
+        >
+          Items per page: 
+        </label>
+        <select
+          class="form-control ng-untouched ng-pristine ng-valid"
+          id="itemsPerPage"
+          name="itemsPerPage"
+          required=""
+        >
+          <option
+            value="1"
+          >
+            1
+          </option>
+          <option
+            value="5"
+          >
+            5
+          </option>
+          <option
+            value="10"
+          >
+            10
+          </option>
+          <option
+            value="20"
+          >
+            20
+          </option>
+        </select>
+      </div>
+    </div>
+    <div
+      class="flower-list"
+    >
+      
+      <app-flower>
+        
+        <div
+          class="flower-card"
+          id="flower_card_foooid2"
+        >
+          <div
+            class="flower-image"
+          >
+            <img
+              src="./assets/flowers/foo2.jpg"
+            />
+            
+            
+          </div>
+          <span
+            class="flower-name"
+          >
+            test flower2
+          </span>
+          <span
+            class="flower-price"
+          >
+            $2.22
+          </span>
+          <div
+            class="flower-rating"
+          >
+            
+            <span>
+              ★
+            </span>
+            <span>
+              ★
+            </span>
+            <span>
+              ★
+            </span>
+            <span>
+              ★
+            </span>
+            <span>
+              ☆
+            </span>
+          </div>
+          
+        </div>
+        
+      </app-flower>
+    </div>
+    
+    <div
+      class="flower-list-controls"
+    >
+      <button
+        id="previous_page"
+      >
+        PREVIOUS
+      </button>
+      <span
+        class="page-counter"
+      >
+        2 of 2
+      </span>
+      <button
+        disabled=""
+        id="next_page"
+      >
+        NEXT
+      </button>
+    </div>
+    
+  </article>
+</div>
+`;
+
+exports[`BuyPageComponent next and previous pages of flowers: previous_page 1`] = `
+<div
+  id="root4"
+>
+  <article>
+    
+    <div
+      class="buy-page-header"
+    >
+      <div
+        class="cart"
+      >
+        <label>
+          Cart:
+        </label>
+        <select
+          id="cars"
+          name="cars"
+        >
+          
+          <option>
+            empty
+          </option>
+          
+        </select>
+      </div>
+      <div
+        class="items-per-page"
+      >
+        <label
+          for="itemsPerPage"
+        >
+          Items per page: 
+        </label>
+        <select
+          class="form-control ng-untouched ng-pristine ng-valid"
+          id="itemsPerPage"
+          name="itemsPerPage"
+          required=""
+        >
+          <option
+            value="1"
+          >
+            1
+          </option>
+          <option
+            value="5"
+          >
+            5
+          </option>
+          <option
+            value="10"
+          >
+            10
+          </option>
+          <option
+            value="20"
+          >
+            20
+          </option>
+        </select>
+      </div>
+    </div>
+    <div
+      class="flower-list"
+    >
+      
+      <app-flower>
+        
+        <div
+          class="flower-card"
+          id="flower_card_foooid1"
+        >
+          <div
+            class="flower-image"
+          >
+            <img
+              src="./assets/flowers/foo1.jpg"
+            />
+            
+            
+          </div>
+          <span
+            class="flower-name"
+          >
+            test flower1
+          </span>
+          <span
+            class="flower-price"
+          >
+            $1.98
+          </span>
+          <div
+            class="flower-rating"
+          >
+            
+            <span>
+              ★
+            </span>
+            <span>
+              ★
+            </span>
+            <span>
+              ☆
+            </span>
+            <span>
+              ☆
+            </span>
+            <span>
+              ☆
+            </span>
+          </div>
+          
+        </div>
+        
+      </app-flower>
+      <app-flower>
+        
+        <div
+          class="flower-card"
+          id="flower_card_foooid2"
+        >
+          <div
+            class="flower-image"
+          >
+            <img
+              src="./assets/flowers/foo2.jpg"
+            />
+            
+            
+          </div>
+          <span
+            class="flower-name"
+          >
+            test flower2
+          </span>
+          <span
+            class="flower-price"
+          >
+            $2.22
+          </span>
+          <div
+            class="flower-rating"
+          >
+            
+            <span>
+              ★
+            </span>
+            <span>
+              ★
+            </span>
+            <span>
+              ★
+            </span>
+            <span>
+              ★
+            </span>
+            <span>
+              ☆
+            </span>
+          </div>
+          
+        </div>
+        
+      </app-flower>
+    </div>
+    
+    <div
+      class="flower-list-controls"
+    >
+      <button
+        disabled=""
+        id="previous_page"
+      >
+        PREVIOUS
+      </button>
+      <span
+        class="page-counter"
+      >
+        1 of 2
+      </span>
+      <button
+        id="next_page"
+      >
+        NEXT
+      </button>
+    </div>
+    
+  </article>
+</div>
+`;
+
+exports[`BuyPageComponent one page total: one_flower_state 1`] = `
+<div
+  id="root1"
+>
+  <article>
+    
+    <div
+      class="buy-page-header"
+    >
+      <div
+        class="cart"
+      >
+        <label>
+          Cart:
+        </label>
+        <select
+          id="cars"
+          name="cars"
+        >
+          
+          <option>
+            empty
+          </option>
+          
+        </select>
+      </div>
+      <div
+        class="items-per-page"
+      >
+        <label
+          for="itemsPerPage"
+        >
+          Items per page: 
+        </label>
+        <select
+          class="form-control ng-untouched ng-pristine ng-invalid"
+          id="itemsPerPage"
+          name="itemsPerPage"
+          required=""
+        >
+          <option
+            value="1"
+          >
+            1
+          </option>
+          <option
+            value="5"
+          >
+            5
+          </option>
+          <option
+            value="10"
+          >
+            10
+          </option>
+          <option
+            value="20"
+          >
+            20
+          </option>
+        </select>
+      </div>
+    </div>
+    <div
+      class="flower-list"
+    >
+      
+      <app-flower>
+        
+        <div
+          class="flower-card"
+          id="flower_card_foooid"
+        >
+          <div
+            class="flower-image"
+          >
+            <img
+              src="./assets/flowers/foo.jpg"
+            />
+            
+            
+          </div>
+          <span
+            class="flower-name"
+          >
+            test flower1
+          </span>
+          <span
+            class="flower-price"
+          >
+            $1.98
+          </span>
+          <div
+            class="flower-rating"
+          >
+            
+            <span>
+              ★
+            </span>
+            <span>
+              ★
+            </span>
+            <span>
+              ☆
+            </span>
+            <span>
+              ☆
+            </span>
+            <span>
+              ☆
+            </span>
+          </div>
+          
+        </div>
+        
+      </app-flower>
+    </div>
+    
+    <div
+      class="flower-list-controls"
+    >
+      <button
+        disabled=""
+        id="previous_page"
+      >
+        PREVIOUS
+      </button>
+      <span
+        class="page-counter"
+      >
+        1 of 0
+      </span>
+      <button
+        disabled=""
+        id="next_page"
+      >
+        NEXT
+      </button>
+    </div>
+    
+  </article>
+</div>
+`;
+
+exports[`BuyPageComponent remove flower from cart: cart_empty_state 1`] = `
+<div
+  id="root3"
+>
+  <article>
+    
+    <div
+      class="buy-page-header"
+    >
+      <div
+        class="cart"
+      >
+        <label>
+          Cart:
+        </label>
+        <select
+          id="cars"
+          name="cars"
+        >
+          
+          <option>
+            empty
+          </option>
+          
+        </select>
+      </div>
+      <div
+        class="items-per-page"
+      >
+        <label
+          for="itemsPerPage"
+        >
+          Items per page: 
+        </label>
+        <select
+          class="form-control ng-untouched ng-pristine ng-valid"
+          id="itemsPerPage"
+          name="itemsPerPage"
+          required=""
+        >
+          <option
+            value="1"
+          >
+            1
+          </option>
+          <option
+            value="5"
+          >
+            5
+          </option>
+          <option
+            value="10"
+          >
+            10
+          </option>
+          <option
+            value="20"
+          >
+            20
+          </option>
+        </select>
+      </div>
+    </div>
+    <div
+      class="flower-list"
+    >
+      
+      <app-flower>
+        
+        <div
+          class="flower-card"
+          id="flower_card_foooid"
+        >
+          <div
+            class="flower-image"
+          >
+            <img
+              class=""
+              src="./assets/flowers/foo.jpg"
+            />
+            
+            
+          </div>
+          <span
+            class="flower-name"
+          >
+            test flower1
+          </span>
+          <span
+            class="flower-price"
+          >
+            $1.98
+          </span>
+          <div
+            class="flower-rating"
+          >
+            
+            <span>
+              ★
+            </span>
+            <span>
+              ★
+            </span>
+            <span>
+              ☆
+            </span>
+            <span>
+              ☆
+            </span>
+            <span>
+              ☆
+            </span>
+          </div>
+          
+        </div>
+        
+      </app-flower>
+    </div>
+    
+    <div
+      class="flower-list-controls"
+    >
+      <button
+        disabled=""
+        id="previous_page"
+      >
+        PREVIOUS
+      </button>
+      <span
+        class="page-counter"
+      >
+        1 of 0
+      </span>
+      <button
+        disabled=""
+        id="next_page"
+      >
+        NEXT
+      </button>
+    </div>
+    
+  </article>
+</div>
+`;
+
+exports[`BuyPageComponent remove flower from cart: flower_in_cart_state 1`] = `
+<div
+  id="root3"
+>
+  <article>
+    
+    <div
+      class="buy-page-header"
+    >
+      <div
+        class="cart"
+      >
+        <label>
+          Cart:
+        </label>
+        <select
+          id="cars"
+          name="cars"
+        >
+          
+          
+          <option
+            value="foooid"
+          >
+            test flower1
+          </option>
+        </select>
+      </div>
+      <div
+        class="items-per-page"
+      >
+        <label
+          for="itemsPerPage"
+        >
+          Items per page: 
+        </label>
+        <select
+          class="form-control ng-untouched ng-pristine ng-invalid"
+          id="itemsPerPage"
+          name="itemsPerPage"
+          required=""
+        >
+          <option
+            value="1"
+          >
+            1
+          </option>
+          <option
+            value="5"
+          >
+            5
+          </option>
+          <option
+            value="10"
+          >
+            10
+          </option>
+          <option
+            value="20"
+          >
+            20
+          </option>
+        </select>
+      </div>
+    </div>
+    <div
+      class="flower-list"
+    >
+      
+      <app-flower>
+        
+        <div
+          class="flower-card"
+          id="flower_card_foooid"
+        >
+          <div
+            class="flower-image"
+          >
+            <img
+              class="half-opacity"
+              src="./assets/flowers/foo.jpg"
+            />
+            
+            
+            <button
+              id="remove_flower_from_cart"
+            >
+              Remove from cart
+            </button>
+          </div>
+          <span
+            class="flower-name"
+          >
+            test flower1
+          </span>
+          <span
+            class="flower-price"
+          >
+            $1.98
+          </span>
+          <div
+            class="flower-rating"
+          >
+            
+            <span>
+              ★
+            </span>
+            <span>
+              ★
+            </span>
+            <span>
+              ☆
+            </span>
+            <span>
+              ☆
+            </span>
+            <span>
+              ☆
+            </span>
+          </div>
+          
+          <div
+            class="in-cart"
+          >
+            <span>
+              In Cart
+            </span>
+          </div>
+        </div>
+        
+      </app-flower>
+    </div>
+    
+    <div
+      class="flower-list-controls"
+    >
+      <button
+        disabled=""
+        id="previous_page"
+      >
+        PREVIOUS
+      </button>
+      <span
+        class="page-counter"
+      >
+        1 of 0
+      </span>
+      <button
+        disabled=""
+        id="next_page"
+      >
+        NEXT
+      </button>
+    </div>
+    
+  </article>
+</div>
+`;

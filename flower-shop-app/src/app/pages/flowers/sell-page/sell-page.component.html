@@ -1,0 +1,77 @@
+<form
+    #flowerForm="ngForm"
+    (ngSubmit)="onSubmit()"
+    class="new-flower-form"
+>
+    <h1>New Flower</h1>
+    <div class="form-input">
+        <label>SKU</label>
+        <input
+            [(ngModel)]="newFlower.sku"
+            class="form-control"
+            id="flowerSku"
+            name="sku"
+            required
+            type="text"
+        >
+    </div>
+    <div class="form-input">
+        <label>Name</label>
+        <input
+            [(ngModel)]="newFlower.name"
+            class="form-control"
+            id="flowerName"
+            name="name"
+            required
+            type="text"
+        >
+    </div>
+    <div class="form-input">
+        <label>Image</label>
+        <input
+            [(ngModel)]="newFlower.image"
+            class="form-control"
+            id="flowerImage"
+            name="image"
+            required
+            type="text"
+        >
+    </div>
+    <div class="form-input">
+        <label>Price</label>
+        <input
+            [(ngModel)]="newFlower.price"
+            class="form-control"
+            id="flowerPrice"
+            name="price"
+            required
+            type="number"
+        >
+    </div>
+    <div class="form-input">
+        <label>Rating</label>
+        <input
+            [(ngModel)]="newFlower.rating"
+            class="form-control"
+            id="flowerRating"
+            max="5"
+            min="0"
+            name="rating"
+            type="number"
+        >
+    </div>
+    <div class="form-controls">
+        <button
+            [disabled]="!flowerForm.form.valid"
+            class="btn btn-success"
+            id="submit_flower"
+            type="submit"
+        >Submit</button>
+        <button
+            (click)="clearFlower(); flowerForm.reset()"
+            class="btn btn-default"
+            id="reset_flower"
+            type="button"
+        >Reset</button>
+    </div>
+</form>

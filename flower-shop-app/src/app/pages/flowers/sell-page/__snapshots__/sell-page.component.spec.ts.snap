@@ -1,0 +1,459 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SellPageComponent able to clear form: empy_form_invalid_state 1`] = `
+<div
+  id="root2"
+>
+  <form
+    class="new-flower-form ng-untouched ng-pristine ng-invalid"
+    novalidate=""
+  >
+    <h1>
+      New Flower
+    </h1>
+    <div
+      class="form-input"
+    >
+      <label>
+        SKU
+      </label>
+      <input
+        class="form-control ng-untouched ng-pristine ng-invalid"
+        id="flowerSku"
+        name="sku"
+        required=""
+        type="text"
+      />
+    </div>
+    <div
+      class="form-input"
+    >
+      <label>
+        Name
+      </label>
+      <input
+        class="form-control ng-untouched ng-pristine ng-invalid"
+        id="flowerName"
+        name="name"
+        required=""
+        type="text"
+      />
+    </div>
+    <div
+      class="form-input"
+    >
+      <label>
+        Image
+      </label>
+      <input
+        class="form-control ng-untouched ng-pristine ng-invalid"
+        id="flowerImage"
+        name="image"
+        required=""
+        type="text"
+      />
+    </div>
+    <div
+      class="form-input"
+    >
+      <label>
+        Price
+      </label>
+      <input
+        class="form-control ng-untouched ng-pristine ng-invalid"
+        id="flowerPrice"
+        name="price"
+        required=""
+        type="number"
+      />
+    </div>
+    <div
+      class="form-input"
+    >
+      <label>
+        Rating
+      </label>
+      <input
+        class="form-control ng-untouched ng-valid ng-pristine"
+        id="flowerRating"
+        max="5"
+        min="0"
+        name="rating"
+        type="number"
+      />
+    </div>
+    <div
+      class="form-controls"
+    >
+      <button
+        class="btn btn-success"
+        disabled=""
+        id="submit_flower"
+        type="submit"
+      >
+        Submit
+      </button>
+      <button
+        class="btn btn-default"
+        id="reset_flower"
+        type="button"
+      >
+        Reset
+      </button>
+    </div>
+  </form>
+</div>
+`;
+
+exports[`SellPageComponent able to clear form: full_form_valid_state 1`] = `
+<div
+  id="root2"
+>
+  <form
+    class="new-flower-form ng-untouched ng-dirty ng-valid"
+    novalidate=""
+  >
+    <h1>
+      New Flower
+    </h1>
+    <div
+      class="form-input"
+    >
+      <label>
+        SKU
+      </label>
+      <input
+        class="form-control ng-untouched ng-dirty ng-valid"
+        id="flowerSku"
+        name="sku"
+        required=""
+        type="text"
+      />
+    </div>
+    <div
+      class="form-input"
+    >
+      <label>
+        Name
+      </label>
+      <input
+        class="form-control ng-untouched ng-dirty ng-valid"
+        id="flowerName"
+        name="name"
+        required=""
+        type="text"
+      />
+    </div>
+    <div
+      class="form-input"
+    >
+      <label>
+        Image
+      </label>
+      <input
+        class="form-control ng-untouched ng-dirty ng-valid"
+        id="flowerImage"
+        name="image"
+        required=""
+        type="text"
+      />
+    </div>
+    <div
+      class="form-input"
+    >
+      <label>
+        Price
+      </label>
+      <input
+        class="form-control ng-untouched ng-dirty ng-valid"
+        id="flowerPrice"
+        name="price"
+        required=""
+        type="number"
+      />
+    </div>
+    <div
+      class="form-input"
+    >
+      <label>
+        Rating
+      </label>
+      <input
+        class="form-control ng-untouched ng-valid ng-dirty"
+        id="flowerRating"
+        max="5"
+        min="0"
+        name="rating"
+        type="number"
+      />
+    </div>
+    <div
+      class="form-controls"
+    >
+      <button
+        class="btn btn-success"
+        id="submit_flower"
+        type="submit"
+      >
+        Submit
+      </button>
+      <button
+        class="btn btn-default"
+        id="reset_flower"
+        type="button"
+      >
+        Reset
+      </button>
+    </div>
+  </form>
+</div>
+`;
+
+exports[`SellPageComponent able to submit valid form: create_flower_call 1`] = `
+Array [
+  Array [
+    Object {
+      "image": "flower_f1.jpg",
+      "name": "flower1",
+      "price": 4.99,
+      "rating": 3,
+      "sku": "f1",
+    },
+  ],
+]
+`;
+
+exports[`SellPageComponent form is cleared after flower is created: alert_calls 1`] = `
+Array [
+  Array [
+    "Created new flower 'flower1'.",
+  ],
+  Array [
+    "Failed to create new flower.",
+  ],
+]
+`;
+
+exports[`SellPageComponent form is cleared after flower is created: create_flower_call 1`] = `
+Array [
+  Array [
+    Object {
+      "image": "flower_f1.jpg",
+      "name": "flower1",
+      "price": 4.99,
+      "rating": 3,
+      "sku": "f1",
+    },
+  ],
+]
+`;
+
+exports[`SellPageComponent form is cleared after flower is created: empy_form_invalid_state 1`] = `
+<div
+  id="root4"
+>
+  <form
+    class="new-flower-form ng-untouched ng-pristine ng-invalid"
+    novalidate=""
+  >
+    <h1>
+      New Flower
+    </h1>
+    <div
+      class="form-input"
+    >
+      <label>
+        SKU
+      </label>
+      <input
+        class="form-control ng-untouched ng-pristine ng-invalid"
+        id="flowerSku"
+        name="sku"
+        required=""
+        type="text"
+      />
+    </div>
+    <div
+      class="form-input"
+    >
+      <label>
+        Name
+      </label>
+      <input
+        class="form-control ng-untouched ng-pristine ng-invalid"
+        id="flowerName"
+        name="name"
+        required=""
+        type="text"
+      />
+    </div>
+    <div
+      class="form-input"
+    >
+      <label>
+        Image
+      </label>
+      <input
+        class="form-control ng-untouched ng-pristine ng-invalid"
+        id="flowerImage"
+        name="image"
+        required=""
+        type="text"
+      />
+    </div>
+    <div
+      class="form-input"
+    >
+      <label>
+        Price
+      </label>
+      <input
+        class="form-control ng-untouched ng-pristine ng-invalid"
+        id="flowerPrice"
+        name="price"
+        required=""
+        type="number"
+      />
+    </div>
+    <div
+      class="form-input"
+    >
+      <label>
+        Rating
+      </label>
+      <input
+        class="form-control ng-untouched ng-valid ng-pristine"
+        id="flowerRating"
+        max="5"
+        min="0"
+        name="rating"
+        type="number"
+      />
+    </div>
+    <div
+      class="form-controls"
+    >
+      <button
+        class="btn btn-success"
+        disabled=""
+        id="submit_flower"
+        type="submit"
+      >
+        Submit
+      </button>
+      <button
+        class="btn btn-default"
+        id="reset_flower"
+        type="button"
+      >
+        Reset
+      </button>
+    </div>
+  </form>
+</div>
+`;
+
+exports[`SellPageComponent should create: empty_state 1`] = `
+<div
+  id="root0"
+>
+  <form
+    class="new-flower-form ng-untouched ng-pristine ng-invalid"
+    novalidate=""
+  >
+    <h1>
+      New Flower
+    </h1>
+    <div
+      class="form-input"
+    >
+      <label>
+        SKU
+      </label>
+      <input
+        class="form-control ng-untouched ng-pristine ng-invalid"
+        id="flowerSku"
+        name="sku"
+        required=""
+        type="text"
+      />
+    </div>
+    <div
+      class="form-input"
+    >
+      <label>
+        Name
+      </label>
+      <input
+        class="form-control ng-untouched ng-pristine ng-invalid"
+        id="flowerName"
+        name="name"
+        required=""
+        type="text"
+      />
+    </div>
+    <div
+      class="form-input"
+    >
+      <label>
+        Image
+      </label>
+      <input
+        class="form-control ng-untouched ng-pristine ng-invalid"
+        id="flowerImage"
+        name="image"
+        required=""
+        type="text"
+      />
+    </div>
+    <div
+      class="form-input"
+    >
+      <label>
+        Price
+      </label>
+      <input
+        class="form-control ng-untouched ng-pristine ng-invalid"
+        id="flowerPrice"
+        name="price"
+        required=""
+        type="number"
+      />
+    </div>
+    <div
+      class="form-input"
+    >
+      <label>
+        Rating
+      </label>
+      <input
+        class="form-control ng-untouched ng-pristine ng-valid"
+        id="flowerRating"
+        max="5"
+        min="0"
+        name="rating"
+        type="number"
+      />
+    </div>
+    <div
+      class="form-controls"
+    >
+      <button
+        class="btn btn-success"
+        disabled=""
+        id="submit_flower"
+        type="submit"
+      >
+        Submit
+      </button>
+      <button
+        class="btn btn-default"
+        id="reset_flower"
+        type="button"
+      >
+        Reset
+      </button>
+    </div>
+  </form>
+</div>
+`;

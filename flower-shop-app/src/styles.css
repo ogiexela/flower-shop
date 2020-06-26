@@ -1,0 +1,39 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: cetner;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+nav a {
+    cursor: pointer;
+    text-decoration: none;
+    margin: 10px;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    text-transform: uppercase;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 1000px;
+    margin: 10px;
+}
