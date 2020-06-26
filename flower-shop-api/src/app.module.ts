@@ -23,7 +23,7 @@ const DB_CONNECTION_META: ConnectionOptions = {
   type: 'postgres',
   url: CONNECTION_STRING,
   entities: [
-    './dist/**/*.entity.js',
+    './api/**/*.entity.js',
   ],
   synchronize: true,
   ...EXTRA,
@@ -32,7 +32,7 @@ const DB_CONNECTION_META: ConnectionOptions = {
 @Module({
   imports: [
     ServeStaticModule.forRoot({
-      rootPath: join(__dirname, '..', 'documentation'),
+      rootPath: join(__dirname, 'documentation'),
     }),
     TypeOrmModule.forRoot(DB_CONNECTION_META),
     FlowerModule,
