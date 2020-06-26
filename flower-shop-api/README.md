@@ -2,7 +2,7 @@
 ## Installation
 
 ```bash
-$ npm install
+$ yarn install
 ```
 
 ## Running the app
@@ -29,11 +29,8 @@ http://localhost:3000/index.html
 
 ```bash
 # unit tests
-$ npm run test
-
-# e2e tests
-$ npm run test:e2e
+$ yarn test
 
 # test coverage
-$ npm run test:cov
+$ yarn test:cov
 ```
