@@ -6,7 +6,7 @@ version: 2
 jobs:
   build:
     environment:
-      CC_TEST_REPORTER_ID: $CODE_CLIMATE_API_KEY
+      CC_TEST_REPORTER_ID: $CODE_CLIMATE_REPORTER_ID
 
     branches:
       only:
@@ -59,9 +59,7 @@ jobs:
 
       - run:
           name: Upload coverage to CC
-          command: |
-            cp ./coverage/clover.xml ./clover.xml
-            ./cc-test-reporter after-build --coverage-input-type clover
+          command: ./cc-test-reporter after-build --coverage-input-type clover ./coverage/clover.xml
           working_directory: flower-shop-app
 
       - store_test_results:
