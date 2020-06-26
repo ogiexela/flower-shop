@@ -13,7 +13,7 @@ Use the `yarn start:prod` for a production build.
 ## Build
 
 Run `yarn build` to build the project.
-The build artifacts will be stored in the `dist/` directory.
+The build artifacts will be stored in the `app/` directory.
 
 ## Running unit tests
 

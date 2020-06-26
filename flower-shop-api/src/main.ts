@@ -1,3 +1,4 @@
+import * as morgan from 'morgan';
 import { NestFactory } from '@nestjs/core';
 import {
   DocumentBuilder,
@@ -8,6 +9,8 @@ import { AppModule } from './app.module';
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
 
+  app.use(morgan('combined'));
+
   const options = new DocumentBuilder()
     .setTitle('Flower Shop API')
     .setDescription('Rest API for Flower Shop')
@@ -15,7 +18,7 @@ async function bootstrap() {
     .build();
 
   const document = SwaggerModule.createDocument(app, options);
-  SwaggerModule.setup('api', app, document);
+  SwaggerModule.setup('swagger-ui', app, document);
 
   await app.listen(3000);
 }

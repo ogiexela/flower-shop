@@ -32,7 +32,7 @@ const DB_CONNECTION_META: ConnectionOptions = {
 @Module({
   imports: [
     ServeStaticModule.forRoot({
-      rootPath: join(__dirname, 'documentation'),
+      rootPath: join(__dirname),
     }),
     TypeOrmModule.forRoot(DB_CONNECTION_META),
     FlowerModule,

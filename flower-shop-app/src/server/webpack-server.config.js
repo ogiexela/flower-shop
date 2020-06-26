@@ -8,8 +8,8 @@ module.exports =
     target: 'node',
     entry: './src/server/server.js',
     output: {
-      path: path.resolve('./dist/server'),
-      publicPath: 'dist/server',
+      path: path.resolve('./app/server'),
+      publicPath: 'app/server',
       filename: 'server.js'
     },
     externals: nodeModules,

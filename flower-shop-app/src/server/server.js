@@ -11,7 +11,10 @@ const express = require('express');
 const app = express();
 const compression = require('compression');
 
+const morgan = require('morgan');
+
 app
+  .use(morgan('combined'))
   .use(compression())
   // Static content
   .use(express.static(html))

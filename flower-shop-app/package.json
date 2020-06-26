@@ -2,7 +2,7 @@
   "name": "flower-shop-app",
   "version": "0.0.0",
   "scripts": {
-    "build": "yarn build:app && yarn build:server",
+    "build": "yarn build:app && yarn build:server && yarn docs",
     "build:app": "ng build --prod --aot --progress=false",
     "build:server": "webpack --config ./src/server/webpack-server.config.js",
     "debug:server": "node --inspect ./src/server/server.js",
@@ -10,8 +10,9 @@
     "ng": "ng",
     "start": "ng serve",
     "start:prod": "ng serve --prod",
-    "start:server": "node ./dist/server/server.js",
-    "test": "jest --verbose"
+    "start:server": "node ./app/server/server.js",
+    "test": "jest --verbose",
+    "docs": "compodoc -t -d ./app/flower-shop-app/documentation -p tsconfig.json"
   },
   "private": false,
   "dependencies": {
@@ -25,6 +26,7 @@
     "@angular/router": "8.2.14",
     "express": "4.17.1",
     "express-http-proxy": "1.6.0",
+    "morgan": "1.10.0",
     "rxjs": "6.4.0",
     "tslib": "1.10.0",
     "zone.js": "0.10.2"
@@ -35,6 +37,7 @@
     "@angular/compiler-cli": "8.2.14",
     "@angular/language-service": "8.2.14",
     "@babel/core": "7.7.2",
+    "@compodoc/compodoc": "1.1.11",
     "@types/jest": "24.0.23",
     "@types/node": "8.9.4",
     "babel-loader": "8.0.6",
