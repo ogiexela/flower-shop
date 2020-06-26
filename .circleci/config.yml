@@ -42,8 +42,27 @@ jobs:
             - ~/.cache/yarn
 
       - run:
-          command: yarn test
-          working_directory: flower-shop-app
+         name: Setup Code Climate test-reporter
+         command: |
+            curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
+            chmod +x ./cc-test-reporter
+            ./cc-test-reporter before-build
+         working_directory: flower-shop-app
+
+      - run:
+         command: yarn test
+         working_directory: flower-shop-app
+
+      - run:
+         name: Send coverage report to Code Climate
+         command: ./cc-test-reporter after-build -t lcov
+         working_directory: flower-shop-app
+
+      # Upload results
+      - store_artifacts: # upload test coverage as artifact
+         path: ./flower-shop-app/coverage/lcov.info
+
+
 
       - store_test_results:
           path: flower-shop-app/test-results
