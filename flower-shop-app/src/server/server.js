@@ -1,7 +1,7 @@
 const path = require('path');
 const proxy = require('express-http-proxy');
 
-const html = path.resolve('./dist/flower-shop-app');
+const html = path.resolve('./app/flower-shop-app');
 
 const port = process.env.PORT || 8080;
 const API_HOST = 'http://localhost:3000';
