@@ -4,6 +4,10 @@
 
 Run `yarn install`
 
+## Documentaiton
+
+https://flowershoptest.herokuapp.com/documentation/  
+
 ## Development server
 
 Run `yarn start` for a dev server. Navigate to `http://localhost:4200/`.
