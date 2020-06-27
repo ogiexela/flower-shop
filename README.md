@@ -7,21 +7,22 @@
 https://flowershoptest.herokuapp.com/
 
 ### Front end
-https://github.com/ogiexela/flower-shop/tree/master/flower-shop-app  
-https://flowershoptest.herokuapp.com/documentation/  
-
 * Angular 8  
 
-### Back end
-https://github.com/ogiexela/flower-shop/tree/master/flower-shop-api  
-https://flowershoptest.herokuapp.com/api/documentation/  
-https://flowershoptest.herokuapp.com/api/swagger-ui/  
+[Source code](https://github.com/ogiexela/flower-shop/tree/master/flower-shop-app)  
+[Documenation](https://flowershoptest.herokuapp.com/documentation/)  
 
+### Back end
 * Nodejs
 * Nestjs
 * Postgres  
 
+[Source code](https://github.com/ogiexela/flower-shop/tree/master/flower-shop-api)  
+[Documentation](https://flowershoptest.herokuapp.com/api/documentation/)  
+[API](https://flowershoptest.herokuapp.com/api/swagger-ui/)  
+
 
 ### Deployment
+https://circleci.com  
 https://hub.docker.com  
-http://heroku.com  
+https://heroku.com  
