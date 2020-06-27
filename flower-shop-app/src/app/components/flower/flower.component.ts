@@ -22,7 +22,7 @@ export class FlowerComponent implements OnInit, OnChanges {
 
   public rating: string[] = Array(5).fill('&#9734;');
   public price: string;
-  public showAddToCart = false;
+  public showCartControls = false;
 
   ngOnInit() {
     this.updateInfo();
@@ -42,17 +42,12 @@ export class FlowerComponent implements OnInit, OnChanges {
     this.price = `${this.flower.price.toFixed(2)}`;
   }
 
-  public setAddToCart(value: boolean): void {
-    if (this.inCart) {
-      return;
-    }
-
-    this.showAddToCart = value;
+  public setShowCartControls(value: boolean): void {
+    this.showCartControls = value;
   }
 
-  public onToCart(): void {
+  public onAddToCart(): void {
     this.inCart = true;
-    this.showAddToCart = false;
     this.addToCart.emit(this.flower.id);
   }
 
@@ -61,4 +56,11 @@ export class FlowerComponent implements OnInit, OnChanges {
     this.removeFromCart.emit(this.flower.id);
   }
 
+  public get showAddToCartButton(): boolean {
+    return this.showCartControls && !this.inCart;
+  }
+
+  public get showRemoveFromCartButton(): boolean {
+    return this.showCartControls && this.inCart;
+  }
 }

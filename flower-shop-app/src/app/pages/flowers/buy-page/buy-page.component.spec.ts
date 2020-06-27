@@ -207,6 +207,12 @@ describe('BuyPageComponent', () => {
     expect(fixture.nativeElement).toMatchSnapshot('flower_in_cart_state');
 
     const firstFlower = fixture.debugElement.query(By.css(`#flower_card_${testData1.data[0].id}`));
+
+    const mouseenter = new MouseEvent('mouseenter');
+    firstFlower.nativeElement.dispatchEvent(mouseenter);
+
+    fixture.detectChanges();
+
     const removeFromCart = firstFlower.query(By.css('#remove_flower_from_cart'));
     const click = new MouseEvent('click');
 

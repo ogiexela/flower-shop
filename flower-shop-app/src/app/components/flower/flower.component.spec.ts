@@ -161,6 +161,12 @@ describe('FlowerComponent', () => {
 
     fixture.detectChanges();
 
+    const flowerCard = fixture.debugElement.query(By.css('.flower-card'));
+    const mouseenter = new MouseEvent('mouseenter');
+    flowerCard.nativeElement.dispatchEvent(mouseenter);
+
+    fixture.detectChanges();
+
     const removeFromCartSpy = jest.spyOn(fixture.componentInstance, 'removeFromCart');
 
     const removeFromCart = fixture.debugElement.query(By.css('#remove_flower_from_cart'));

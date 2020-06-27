@@ -1,23 +1,23 @@
 <div
-    (mouseenter)="setAddToCart(true)"
-    (mouseleave)="setAddToCart(false)"
+    (mouseenter)="setShowCartControls(true)"
+    (mouseleave)="setShowCartControls(false)"
     *ngIf="flower"
     class="flower-card"
     id="flower_card_{{flower?.id}}"
 >
     <div class="flower-image">
         <img
-            [ngClass]="{'half-opacity': inCart || showAddToCart}"
+            [ngClass]="{'half-opacity': showCartControls}"
             src="./assets/flowers/{{flower.image}}"
         >
         <button
-            (click)="onToCart()"
-            *ngIf="showAddToCart && !inCart"
+            (click)="onAddToCart()"
+            *ngIf="showAddToCartButton"
             id="add_flower_to_cart"
         >Add to cart</button>
         <button
             (click)="onRemoveFromCart()"
-            *ngIf="inCart"
+            *ngIf="showRemoveFromCartButton"
             id="remove_flower_from_cart"
         >Remove from cart</button>
     </div>

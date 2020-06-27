@@ -83,10 +83,15 @@ exports[`FlowerComponent able to remove from cart: flower_added_to_cart_false 1`
         class="flower-image"
       >
         <img
-          class=""
+          class="half-opacity"
           src="./assets/flowers/flower5.jpg"
         />
         
+        <button
+          id="add_flower_to_cart"
+        >
+          Add to cart
+        </button>
         
       </div>
       <span
@@ -321,16 +326,10 @@ exports[`FlowerComponent flower already in cart: flower_already_in_cart 1`] = `
         class="flower-image"
       >
         <img
-          class="half-opacity"
           src="./assets/flowers/flower7.jpg"
         />
         
         
-        <button
-          id="remove_flower_from_cart"
-        >
-          Remove from cart
-        </button>
       </div>
       <span
         class="flower-name"

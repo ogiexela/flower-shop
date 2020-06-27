@@ -937,10 +937,15 @@ exports[`BuyPageComponent remove flower from cart: cart_empty_state 1`] = `
             class="flower-image"
           >
             <img
-              class=""
+              class="half-opacity"
               src="./assets/flowers/foo.jpg"
             />
             
+            <button
+              id="add_flower_to_cart"
+            >
+              Add to cart
+            </button>
             
           </div>
           <span
@@ -1084,16 +1089,10 @@ exports[`BuyPageComponent remove flower from cart: flower_in_cart_state 1`] = `
             class="flower-image"
           >
             <img
-              class="half-opacity"
               src="./assets/flowers/foo.jpg"
             />
             
             
-            <button
-              id="remove_flower_from_cart"
-            >
-              Remove from cart
-            </button>
           </div>
           <span
             class="flower-name"
