@@ -1,8 +1,8 @@
 # Flower Shop
 
-[![CircleCI](https://circleci.com/gh/ogiexela/flower-shop.svg?style=shield)](https://circleci.com/gh/ogiexela/flower-shop)  
-[![Test Coverage](https://api.codeclimate.com/v1/badges/e17d19dae3e3620914bc/test_coverage)](https://codeclimate.com/github/ogiexela/flower-shop/test_coverage)  
-[![Maintainability](https://api.codeclimate.com/v1/badges/e17d19dae3e3620914bc/maintainability)](https://codeclimate.com/github/ogiexela/flower-shop/maintainability)  
+[![CircleCI](https://circleci.com/gh/ogiexela/flower-shop.svg?style=shield)](https://circleci.com/gh/ogiexela/flower-shop)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/e17d19dae3e3620914bc/test_coverage)](https://codeclimate.com/github/ogiexela/flower-shop/test_coverage)
+[![Maintainability](https://api.codeclimate.com/v1/badges/e17d19dae3e3620914bc/maintainability)](https://codeclimate.com/github/ogiexela/flower-shop/maintainability)
 
 https://flowershoptest.herokuapp.com/
 
